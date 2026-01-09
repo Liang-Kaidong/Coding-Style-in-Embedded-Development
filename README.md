@@ -3,25 +3,25 @@
 ## 一、文件头部注释（带边框）
 ```
 /*******************************************************
-Copyright (C) 2025 XXXX
-FileName: main.c
-Author: KD
-Date: 2025-06-01
-Description: 主程序文件，实现系统初始化与任务调度
-Version: V1.0
-*******************************************************/
+ * Copyright (C) 2025 XXXX
+ * FileName: main.c
+ * Author: KD
+ * Date: 2025-06-01
+ * Description: 主程序文件，实现系统初始化与任务调度
+ * Version: V1.0
+ ******************************************************/
 ```
 
 ## 二、函数注释（星号顶格，后接空格）
 ```
 /*
-* 功能: 初始化GPIO引脚
-* 参数: 
-*     port - GPIO端口号(如GPIOA/GPIOB)
-*     pin - 引脚号(0-15)
-*     mode - 引脚模式(INPUT/OUTPUT/AF)
-* 返回值: 0-成功，-1-失败
-*/
+ * 功能: 初始化GPIO引脚
+ * 参数: 
+ *     port - GPIO端口号(如GPIOA/GPIOB)
+ *     pin - 引脚号(0-15)
+ *     mode - 引脚模式(INPUT/OUTPUT/AF)
+ * 返回值: 0-成功，-1-失败
+ */
 
 int gpio_init(uint32_t port, uint8_t pin, uint8_t mode) {
     /* 函数实现 */ 
@@ -33,11 +33,11 @@ int gpio_init(uint32_t port, uint8_t pin, uint8_t mode) {
 ## 三、复杂逻辑注释（星号顶格，后接空格）
 ```
 /*
-* 算法说明:
-* 1. 采用二分查找法在有序数组中查找目标值
-* 2. 时间复杂度O(log n)
-* 3. 要求数组必须按升序排列
-*/
+ * 算法说明:
+ * 1. 采用二分查找法在有序数组中查找目标值
+ * 2. 时间复杂度O(log n)
+ * 3. 要求数组必须按升序排列
+ */
 
 int binary_search(int arr[], int left, int right, int target) {
     while (left <= right) {
@@ -58,10 +58,10 @@ int binary_search(int arr[], int left, int right, int target) {
 ## 四、条件编译注释（星号顶格，后接空格）
 ```
 /*
-* 平台说明:
-* - __ARM__: ARM架构平台
-* - __x86_64__: x86_64架构平台
-*/
+ * 平台说明:
+ * - __ARM__: ARM架构平台
+ * - __x86_64__: x86_64架构平台
+ */
 
 #if def __ARM__
     #include "arm_arch.h"
@@ -74,14 +74,14 @@ int binary_search(int arr[], int left, int right, int target) {
 ## 五、宏定义注释（星号顶格，后接空格）
 ```
 /*
-* 宏定义: LIMIT(x, min, max)
-* 功能: 将值限制在指定范围内
-* 参数:
-*     x - 待限制的值
-*     min - 最小值
-*     max - 最大值
-* 返回: 若x在[min,max]内则返回x，否则返回边界值
-*/
+ * 宏定义: LIMIT(x, min, max)
+ * 功能: 将值限制在指定范围内
+ * 参数:
+ *     x - 待限制的值
+ *     min - 最小值
+ *     max - 最大值
+ * 返回: 若x在[min,max]内则返回x，否则返回边界值
+ */
 
 #define LIMIT(x, min, max) (((x) < (min)) ? (min) : (((x) > (max)) ? (max) : (x)))
 ```
