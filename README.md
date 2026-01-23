@@ -14,7 +14,7 @@
 
 ## 二、函数注释（星号顶格，后接空格）
 ```
-/*
+/**
  * 功能: 初始化GPIO引脚
  * 参数: 
  *     port - GPIO端口号(如GPIOA/GPIOB)
@@ -32,7 +32,7 @@ int gpio_init(uint32_t port, uint8_t pin, uint8_t mode) {
 
 ## 三、复杂逻辑注释（星号顶格，后接空格）
 ```
-/*
+/**
  * 算法说明:
  * 1. 采用二分查找法在有序数组中查找目标值
  * 2. 时间复杂度O(log n)
@@ -57,7 +57,7 @@ int binary_search(int arr[], int left, int right, int target) {
 
 ## 四、条件编译注释（星号顶格，后接空格）
 ```
-/*
+/**
  * 平台说明:
  * - __ARM__: ARM架构平台
  * - __x86_64__: x86_64架构平台
@@ -73,7 +73,7 @@ int binary_search(int arr[], int left, int right, int target) {
 
 ## 五、宏定义注释（星号顶格，后接空格）
 ```
-/*
+/**
  * 宏定义: LIMIT(x, min, max)
  * 功能: 将值限制在指定范围内
  * 参数:
